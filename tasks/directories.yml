@@ -1,0 +1,9 @@
+---
+# Create base directories
+#
+- name: Prepare directories
+  file: path={{ item }} state=directory mode=0744 owner={{ base_deploy_user }}
+  with_items:
+      - "{{ base_configuration_directory }}"
+      - "{{ base_logs_directory }}"
+      - "{{ base_run_directory }}"
