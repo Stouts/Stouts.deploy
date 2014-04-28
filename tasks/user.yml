@@ -2,4 +2,4 @@
 # Create deploy user
 #
 - name: st.base | Make sure the deploy user are present
-  user: name={{st_deploy_user.name}} password={{st_deploy_user.password}} state=present
+  user: name={{base_deploy_user.name}} password={{base_deploy_user.password}} state=present

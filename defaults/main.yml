@@ -3,10 +3,11 @@
 
 base_environment: develop
 base_deploy_user:
-    - name: vagrant
-      password: vagrant
+    name: vagrant
+    password: vagrant
 base_project_name: stout
 base_deploy_directory: /usr/lib/{{ base_project_name }}
-base_configuration_directory: "{{ base_deploy_directory}}/configuration"
-base_logs_directory: "{{ base_deploy_directory}}/logs"
-base_run_directory: "{{ base_run_directory}}/run"
+base_configuration_directory: "{{base_deploy_directory}}/configuration"
+base_logs_directory: "{{base_deploy_directory}}/logs"
+base_run_directory: "{{base_deploy_directory}}/run"
+base_source_directory: "{{base_deploy_directory}}/source"
