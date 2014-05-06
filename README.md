@@ -1,7 +1,7 @@
-st.base
-=======
+Stouts.base
+===========
 
-[![Build Status](https://travis-ci.org/Stouts/st.base.png)](https://travis-ci.org/Stouts/st.base)
+[![Build Status](https://travis-ci.org/Stouts/Stouts.base.png)](https://travis-ci.org/Stouts/Stouts.base)
 
 Ansible role which creates base directories and sets base variables, also ensures for deploy user exists
 
@@ -22,7 +22,7 @@ base_source_directory: "{{base_deploy_directory}}/source"   # set variable with 
 
 #### Usage
 
-Add `st.base` to your roles and set variables in your playbook file.
+Add `Stouts.base` to your roles and set variables in your playbook file.
 
 Example:
 
@@ -31,7 +31,7 @@ Example:
 - hosts: all
 
   roles:
-    - st.base
+    - Stouts.base
 
   vars:
     base_project_name: facebook  # ;)
@@ -44,4 +44,4 @@ Licensed under the MIT License. See the LICENSE file for details.
 
 #### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/Stouts/st.base/issues)!
+Are [welcome](https://github.com/Stouts/Stouts.base/issues)!
