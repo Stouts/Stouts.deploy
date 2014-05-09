@@ -8,8 +8,9 @@ Ansible role which creates base directories and sets base variables, also ensure
 #### Variables
 
 ```yaml
-base_environment: develop                   # set environment variable
-base_deploy_user:                           # create and set deploy user
+base_enabled: yes                           # Enable role
+base_environment: develop                   # Set environment variable
+base_deploy_user:                           # Create and set deploy user
     name: vagrant
     password: vagrant
 base_project_name: stout                    # set varibale with project name

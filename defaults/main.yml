@@ -1,6 +1,6 @@
 ---
-# Setup base variables
 
+base_enabled: yes
 base_environment: develop
 base_deploy_user:
     name: vagrant
