@@ -1,4 +1,4 @@
 ---
 
-- include: user.yml
-- include: directories.yml
+- include: base.yml
+  when: base_enabled

@@ -1,0 +1,10 @@
+---
+
+- name: base-dirs | Ensure conf and logs project directories exists
+  file: path={{item}} state=directory mode=0755 owner={{base_deploy_user}}
+  with_items:
+      - "{{base_configuration_directory}}"
+      - "{{base_logs_directory}}"
+
+- name: base-dirs | Ensure run directory exists
+  file: path={{base_run_directory}} state=directory mode=0755 owner={{base_deploy_user}}
