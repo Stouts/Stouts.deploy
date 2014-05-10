@@ -8,17 +8,15 @@ Ansible role which creates base directories and sets base variables, also ensure
 #### Variables
 
 ```yaml
-base_enabled: yes                           # Enable role
-base_environment: develop                   # Set environment variable
-base_deploy_user:                           # Create and set deploy user
-    name: vagrant
-    password: vagrant
-base_project_name: stout                    # set varibale with project name
-base_deploy_directory: /usr/lib/{{ base_project_name }}  # create and set project deployment directory
-base_configuration_directory: "{{base_deploy_directory}}/configuration"  # create and set project configuration directory
-base_logs_directory: "{{base_deploy_directory}}/logs"  # create and set project logs directory
-base_run_directory: "{{base_deploy_directory}}/run"  # create and set project run directory
-base_source_directory: "{{base_deploy_directory}}/source"   # set variable with source directory
+base_enabled: yes                     # Enable the role
+base_environment: develop             # Pick environment variable
+base_deploy_user: vagrant             # Set deploy user
+base_project_name: stout              # Pick a project name
+base_deploy_directory: /usr/lib/{{ base_project_name }}                 # Main project's directory
+base_configuration_directory: "{{base_deploy_directory}}/configuration" # Directory for placed configuration files
+base_logs_directory: "{{base_deploy_directory}}/logs"                   # Directory for placed logs
+base_run_directory: "{{base_deploy_directory}}/run"                     # Directory for run files
+base_source_directory: "{{base_deploy_directory}}/source"               # Source's directory
 ```
 
 #### Usage
