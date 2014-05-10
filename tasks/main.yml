@@ -1,9 +1,4 @@
 ---
 
-- include: user.yml
+- include: base.yml
   when: base_enabled
-  tags: [base, base-user]
-
-- include: directories.yml
-  when: base_enabled
-  tags: [base, base-directories]
