@@ -1,5 +1,5 @@
-Stouts.base
-===========
+Stouts.deploy
+=============
 
 [![Build Status](https://travis-ci.org/Stouts/Stouts.deploy.png)](https://travis-ci.org/Stouts/Stouts.deploy)
 
