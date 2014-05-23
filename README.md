@@ -1,27 +1,28 @@
 Stouts.base
 ===========
 
-[![Build Status](https://travis-ci.org/Stouts/Stouts.base.png)](https://travis-ci.org/Stouts/Stouts.base)
+[![Build Status](https://travis-ci.org/Stouts/Stouts.deploy.png)](https://travis-ci.org/Stouts/Stouts.deploy)
 
-Ansible role which creates base directories and sets base variables, also ensures for deploy user exists
+Ansible role which creates deploy directories and sets deploy variables, also ensures for deploy user exists
+Deploy boilerplate for using in playbooks and other roles.
 
 #### Variables
 
 ```yaml
-base_enabled: yes                     # Enable the role
-base_environment: develop             # Pick environment variable
-base_deploy_user: vagrant             # Set deploy user
-base_project_name: stout              # Pick a project name
-base_deploy_directory: /usr/lib/{{ base_project_name }}                 # Main project's directory
-base_configuration_directory: "{{base_deploy_directory}}/configuration" # Directory for placed configuration files
-base_logs_directory: "{{base_deploy_directory}}/logs"                   # Directory for placed logs
-base_run_directory: "{{base_deploy_directory}}/run"                     # Directory for run files
-base_source_directory: "{{base_deploy_directory}}/source"               # Source's directory
+deploy_enabled: yes                     # Enable the role
+deploy_environment: develop             # Pick environment variable
+deploy_user: vagrant                    # Set deploy user
+deploy_project_name: web                # Pick a project name
+deploy_dir: /usr/lib/{{deploy_project_name}} # Root deploy directory
+deploy_configuration_dir: "{{deploy_dir}}/configuration" # Directory for placed configuration files
+deploy_logs_dir: "{{deploy_dir}}/logs"                   # Directory for placed logs
+deploy_run_dir: "{{deploy_dir}}/run"                     # Directory for run files
+deploy_source_dir: "{{deploy_dir}}/source"               # Source's directory
 ```
 
 #### Usage
 
-Add `Stouts.base` to your roles and set variables in your playbook file.
+Add `Stouts.deploy` to your roles and set variables in your playbook file.
 
 Example:
 
@@ -30,10 +31,11 @@ Example:
 - hosts: all
 
   roles:
-    - Stouts.base
+    - Stouts.deploy
 
   vars:
-    base_project_name: facebook  # ;)
+    deploy_project_name: facebook  # ;)
+    deploy_user: deploy
 
 ```
 
@@ -43,4 +45,4 @@ Licensed under the MIT License. See the LICENSE file for details.
 
 #### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/Stouts/Stouts.base/issues)!
+Are [welcome](https://github.com/Stouts/Stouts.deploy/issues)!

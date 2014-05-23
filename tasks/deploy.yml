@@ -1,0 +1,7 @@
+---
+
+- include: user.yml
+  tags: [deploy, deploy-user]
+
+- include: dirs.yml
+  tags: [deploy, deploy-dirs]

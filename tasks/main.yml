@@ -1,4 +1,4 @@
 ---
 
-- include: base.yml
-  when: base_enabled
+- include: deploy.yml
+  when: deploy_enabled

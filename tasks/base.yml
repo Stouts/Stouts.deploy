@@ -1,7 +1,0 @@
----
-
-- include: user.yml
-  tags: [base, base-user]
-
-- include: dirs.yml
-  tags: [base, base-dirs]
