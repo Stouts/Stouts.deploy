@@ -8,6 +8,8 @@ Deploy boilerplate for using in playbooks and other roles.
 
 #### Variables
 
+The role variables and default values.
+
 ```yaml
 deploy_enabled: yes                     # Enable the role
 deploy_environment: develop             # Pick environment variable
