@@ -11,7 +11,7 @@ Deploy boilerplate for using in playbooks and other roles.
 ```yaml
 deploy_enabled: yes                     # Enable the role
 deploy_environment: develop             # Pick environment variable
-deploy_user: vagrant                    # Set deploy user
+deploy_user: {{ansible_ssh_user}}       # Set deploy user
 deploy_project_name: web                # Pick a project name
 deploy_dir: /usr/lib/{{deploy_project_name}} # Root deploy directory
 deploy_configuration_dir: "{{deploy_dir}}/configuration" # Directory for placed configuration files
