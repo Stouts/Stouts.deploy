@@ -6,6 +6,7 @@ Stouts.deploy
 Ansible role which creates deploy directories and sets deploy variables, also ensures for deploy user exists
 Deploy boilerplate for using in playbooks and other roles.
 
+
 #### Variables
 
 The role variables and default values.
