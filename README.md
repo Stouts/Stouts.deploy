@@ -26,8 +26,9 @@ deploy_etc_dir: "{{deploy_dir}}/etc"          # Directory where placed configura
 deploy_log_dir: "{{deploy_dir}}/log"          # Directory where placed logs
 deploy_run_dir: "{{deploy_dir}}/run"          # Directory where placed unix sockets and pid files
 deploy_src_dir: "{{deploy_dir}}/src"          # Source's directory
+deploy_bin_dir: "{{deploy_dir}}/bin"          # Directory where placed scripts
 
-deploy_dir_skip: ["{{deploy_src_dir}}"]           # Doent create this dirs
+deploy_dir_skip: ["{{deploy_src_dir}}", "{{deploy_bin_dir}}"]       # Dont create this dirs, only keep variables
 ```
 
 #### Usage
