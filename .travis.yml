@@ -24,9 +24,9 @@ script:
     || (echo 'Idempotence test: fail' && exit 1)
 
   # Check for role is done
+  - ls -la /home/travis/deploy
   - test -d /home/travis/deploy/run || exit 1
   - test -d /home/travis/deploy/log || exit 1
   - test -d /home/travis/deploy/etc || exit 1
-  - test -d /home/travis/deploy/src && exit 1
 
 deploy_dir: /home/travis/deploy
