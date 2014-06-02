@@ -25,7 +25,8 @@ script:
 
   # Check for role is done
   - test -d /home/travis/deploy/run || exit 1
-  - test -d /home/travis/deploy/logs || exit 1
-  - test -d /home/travis/deploy/configuration || exit 1
+  - test -d /home/travis/deploy/log || exit 1
+  - test -d /home/travis/deploy/etc || exit 1
+  - test -d /home/travis/deploy/src && exit 1
 
 deploy_dir: /home/travis/deploy

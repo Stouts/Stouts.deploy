@@ -1,7 +1,17 @@
 ---
 
-- include: user.yml
-  tags: [deploy, deploy-user]
+- name: Make sure the deploy group are present
+  group: name={{deploy_group}}
 
-- include: dirs.yml
-  tags: [deploy, deploy-dirs]
+- name: Make sure the deploy user are present
+  user: name={{deploy_user}} system=yes
+
+- name: Ensure deploy dirs exists
+  file: path={{item}} state=directory mode=0755 owner={{deploy_user}} group={{deploy_group}}
+  when: {{item}} not in deploy_skip
+  with_items:
+      - "{{deploy_dir}}"
+      - "{{deploy_etc_dir}}"
+      - "{{deploy_log_dir}}"
+      - "{{deploy_run_dir}}"
+      - "{{deploy_src_dir}}"

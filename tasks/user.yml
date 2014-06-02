@@ -1,4 +1,0 @@
----
-
-- name: deploy-user | Make sure the deploy user are present
-  user: name={{deploy_user}} system=yes
