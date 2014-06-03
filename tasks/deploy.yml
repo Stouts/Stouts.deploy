@@ -14,4 +14,5 @@
       - "{{deploy_etc_dir}}"
       - "{{deploy_log_dir}}"
       - "{{deploy_run_dir}}"
+      - "{{deploy_bin_dir}}"
       - "{{deploy_src_dir}}"
