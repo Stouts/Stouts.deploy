@@ -2,6 +2,7 @@ Stouts.deploy
 =============
 
 [![Build Status](https://travis-ci.org/Stouts/Stouts.deploy.png)](https://travis-ci.org/Stouts/Stouts.deploy)
+[![Stories in Ready](https://badge.waffle.io/Stouts/Stouts.deploy.svg?label=ready&title=Ready)](http://waffle.io/Stouts/Stouts.deploy)
 
 Ansible role which creates deploy directories and sets deploy variables, also ensures for deploy user exists
 The Boilerplate for using in playbooks and other roles.
