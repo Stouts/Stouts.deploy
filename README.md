@@ -1,8 +1,9 @@
 Stouts.deploy
 =============
 
-[![Build Status](https://travis-ci.org/Stouts/Stouts.deploy.png)](https://travis-ci.org/Stouts/Stouts.deploy)
-[![Stories in Ready](https://badge.waffle.io/Stouts/Stouts.deploy.svg?label=ready&title=Ready)](http://waffle.io/Stouts/Stouts.deploy)
+[![Build Status](http://img.shields.io/travis/Stouts/Stouts.deploy.svg?style=flat-square)](https://travis-ci.org/Stouts/Stouts.deploy)
+[![Galaxy](http://img.shields.io/badge/galaxy-Stouts.deploy-blue.svg?style=flat-square)](https://galaxy.deploy.com/list#/roles/933)
+[![Tag](http://img.shields.io/github/tag/Stouts/Stouts.deploy.svg?style=flat-square)]()
 
 Ansible role which creates deploy directories and sets deploy variables, also ensures for deploy user exists
 The Boilerplate for using in playbooks and other roles.
