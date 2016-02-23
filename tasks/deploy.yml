@@ -7,7 +7,7 @@
   user: name={{deploy_user}} system=yes
 
 - name: Ensure deploy dirs exists
-  file: path={{item}} state=directory mode=0755 owner={{deploy_user}} group={{deploy_group}}
+  file: path={{item}} state=directory mode={{deploy_mode}} owner={{deploy_user}} group={{deploy_group}}
   when: item not in deploy_dir_skip
   with_items:
       - "{{deploy_dir}}"
