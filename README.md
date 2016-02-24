@@ -23,6 +23,8 @@ deploy_group: "{{deploy_user}}"               # Set deploy group
 
 deploy_app_name: web                          # Set application name
 
+deploy_mode: 0755                             # Set mode to deploy directories
+
 deploy_dir: /usr/lib/{{deploy_app_name}}      # Root deploy directory
 deploy_etc_dir: "{{deploy_dir}}/etc"          # Directory where placed configuration files
 deploy_log_dir: "{{deploy_dir}}/log"          # Directory where placed logs
